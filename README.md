@@ -1,12 +1,12 @@
-#ma premiere page web sur github test en construction
-<div  style="background-color:lightorange ; width:560px;height:300px">
-<iframe border="0" width="500" height="400" scrolling="no" allowfullscreen="true" src="https://combinatronics.com/pierreweb/cubickrubs/master/cubick_rubs.html" ></iframe>
+#ma premiere page web sur github test en 'construction'
+<div  style="background-color:lightorange ; width:560px;height:500px">
+<iframe border="0" width="500" height="400" scrolling="yes" allowfullscreen="true" src="https://combinatronics.com/pierreweb/cubickrubs/master/cubick_rubs.html" ></iframe>
 </div>
 <br/>
 [Link](https://github.com/pierreweb/cubickrubs/blob/master/cubick_rubs.html) 
 <br/>
 <br/>
-[Image](https://p7.storage.canalblog.com/71/92/893193/71419966.jpg)
+![Image](https://p7.storage.canalblog.com/71/92/893193/71419966.jpg)
 <br/>
 
 ## Welcome to GitHub Pages
