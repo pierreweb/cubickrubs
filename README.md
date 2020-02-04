@@ -1,6 +1,6 @@
 #ma premiere page web sur github test en construction
 <div  style="background-color:lightblue ; width:560px;height:300px">
-<iframe width="560" height="360" src="https://combinatronics.com/pierreweb/cubickrubs/master/cubick_rubs.html" frameborder="false" allowfullscreen></iframe>
+<iframe  height="300" width="500" src="https://combinatronics.com/pierreweb/cubickrubs/master/cubick_rubs.html" allowfullscreen></iframe>
 </div>
 <br/>
 [Link](https://github.com/pierreweb/cubickrubs/blob/master/cubick_rubs.html) 
