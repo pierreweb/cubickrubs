@@ -26,8 +26,8 @@ https://mobiforge.com/design-development/html5-mobile-web-touch-events
   <meta name="keywords" content="HTML,CSS,JavaScript,webgl,webgl2,particles,transform feedback,tutorial,3d,particules">
   <meta name="author" content="http://lociciel3d.canalblog.com/">
      
-<!-- <link rel="stylesheet" href="cubick rubs.css">-->
-<link rel="stylesheet" href="https://ahp.li/e6b35fc9a3bbd753c597.css"/>
+<link rel="stylesheet" href="cubick rubs.css">
+<!-- <link rel="stylesheet" href="https://ahp.li/e6b35fc9a3bbd753c597.css"/>-->
     
 <link rel="icon" type="image/png" href="./images/cubik_rubs1.png" />
     
@@ -35,8 +35,7 @@ https://mobiforge.com/design-development/html5-mobile-web-touch-events
     <script src="./script/gl-matrix-min.js"></script>
     <script src="./script/noise3D.js"></script>
     <script src="./script/webgl-utils.js"></script>
-   <!--  <script type="text/javascript" src="./script/sylvester.js"></script>
-<script type="text/javascript" src="./script/embed.js"></script> -->
+
 </head>
 
 <body>
@@ -56,7 +55,7 @@ https://mobiforge.com/design-development/html5-mobile-web-touch-events
 </div>
 <script src="./script/webgl-lessons-ui.js"></script>
 <script src="./script/browser_detect.js"></script><!-- detection browser car firefox android gere pas css :hover -->
-<script src="http://ahp.li/d5e276bfd4549404b2c4.js"></script>
+<!--  <script src="http://ahp.li/d5e276bfd4549404b2c4.js"></script>-->
 
     <!-- WebGL 2 shaders -->
     <script id="vs-draw" type="x-shader/x-vertex">#version 300 es
@@ -84,7 +83,7 @@ uniform vec2 u_resolutioninit;
 uniform float u_size;//multiplicateur a_size entre
 uniform int u_choixCouleur;//changement couleur
 uniform vec2 u_pulsation;//pulsation rot,hue
-uniform vec2 u_random;//2 nbr al�atoires entre 0. et 1.
+uniform vec2 u_random;//2 nbr aléatoires entre 0. et 1.
 
         layout(location = POSITION_LOCATION) in vec2 a_position;
         layout(location = VELOCITY_LOCATION) in vec2 a_velocity;
@@ -169,7 +168,7 @@ vec3 changeHue(vec3 c)
 vec3 hueChanged=c;
 //hueChanged.x=1.;//teinte
 //hueChanged.y =1.;//saturation
-//hueChanged.z =1.;//luminosité
+//hueChanged.z =1.;//luminositÃ©
 //hueChanged.x =abs(sin(u_time*0.00015+a_ID));//hueChanged.z =abs(sin(u_time*0.00001+1.57+a_ID));//hueChanged.y =abs(sin(u_time*0.0001+3.14+a_ID));
 
 if (u_choixCouleur==0) {
@@ -217,9 +216,9 @@ void main()
   
 // convertit de 0->1
 zeroToOne= zeroToOne/u_resolution;
-// convertit de 0->1 à 0->2
+// convertit de 0->1 Ã  0->2
 vec2 zeroToTwo = zeroToOne * 2.0;
-// convertit de 0->2 à -1->+1 (clipspace)
+// convertit de 0->2 Ã  -1->+1 (clipspace)
 vec2 clipSpace = (zeroToTwo - 1.0);
 clipSpace=clipSpace*vec2(1.,-1.);
 //test collision
@@ -442,7 +441,7 @@ var choixCouleurLocation = gl.getUniformLocation(program, 'u_choixCouleur');
 
         
 for (var p = 0; p < NBR_PARTICULES; ++p) {
-particuleSpawntime[p] =Math.random();//spawtime utilisé comme random
+particuleSpawntime[p] =Math.random();//spawtime utilisÃ© comme random
 particuleDureeDeVie[p] =dureeDeVieMin+Math.random()* (dureeDeVieMax-dureeDeVieMin);
 particuleIds[p] = p;
 particuleSizes[p]=rayonMoyen+(0.5-Math.random())*deltaRayon;
@@ -688,7 +687,7 @@ function exitFullscreen() {//alert ("exitfullscreen");
 
         gl.uniform4f(drawColorLocation, 0.60, 1.0, 0.50, 1.0);
        // gl.uniform2f(drawAccelerationLocation, 0.0, ACCELERATION);
-        var resolutionUniformLocation = gl.getUniformLocation(program, "u_resolution");// indique la résolution au programme
+        var resolutionUniformLocation = gl.getUniformLocation(program, "u_resolution");// indique la rÃ©solution au programme
         gl.uniform2f(resolutionUniformLocation, gl.canvas.width, gl.canvas.height);// set the resolution
 gl.uniform1f(drawSizeLocation, choixTaille);
 gl.uniform1i(choixCouleurLocation, choixCouleur);
