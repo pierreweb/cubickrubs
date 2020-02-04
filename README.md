@@ -1,5 +1,5 @@
 ma premiere page web sur github test
-[Link](https://raw.githubusercontent.com/pierreweb/cubickrubs/master/cubick_rubs.html) 
+[Link](https://github.com/pierreweb/cubickrubs/blob/master/cubick_rubs.html) 
 and ![Image](src)
 ## Welcome to GitHub Pages
 
